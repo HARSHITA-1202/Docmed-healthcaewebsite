@@ -1,0 +1,133 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left-panel, .right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.left-panel {
+    background-color: #fff;
+}
+.right-panel {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+.left-panel h2, .right-panel h2 {
+    margin: 0 0 20px;
+}
+.left-panel .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.left-panel .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.left-panel .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.left-panel .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.left-panel .actions .remember-me {
+    display: flex;
+    align-items: center;
+}
+.left-panel .actions .remember-me input {
+    margin-right: 5px;
+}
+.left-panel .actions a {
+    color: #ff416c;
+    text-decoration: none;
+}
+.left-panel .sign-in-btn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff416c;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.left-panel .sign-in-btn:hover {
+    background: white;
+    color: #ff416c;
+    border: 2px solid #ff416c;
+}
+.right-panel .sign-up-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    
+.input-group {
+position: relative;
+}
+
+.password-toggle {
+position: absolute;
+right: 10px;
+top: 66%;
+transform: translateY(-50%);
+font-size: 18px; /* Adjust icon size */
+color: #999;
+cursor: pointer;
+transition: color 0.3s ease;
+visibility: hidden; /* Hide initially */
+}
+
+.input-group input:valid + .password-toggle {
+visibility: visible; /* Show when there's input in the password field */
+}
+
+.password-toggle:hover {
+color: #ff416c; /* Highlight on hover */
+}
+
+.password-toggle:active {
+transform: translateY(-50%) scale(0.95); /* Add a slight click effect */
+}
+.lastone {
+position: relative; /* Use absolute positioning */
+bottom: 80;          /* Align it to the bottom */
+right: 0;           /* Align it to the right */
+margin: 10px;       /* Optional: Add some spacing from edges */ /* Optional: Add styling */
+padding: 5px 10px;  /* Optional: Add padding for aesthetics */
+font-size: 14px;    /* Adjust font size */
+}
